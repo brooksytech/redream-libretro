@@ -1,3 +1,11 @@
+This is a fork of https://github.com/libretro/redream-next
+
+Latest commits found from the following link:
+
+https://web.archive.org/web/20201224070936/https://github.com/libretro/retrodream
+
+The code has been modified to compile on the Jelos operating system
+
 # redream
 
 [redream](http://redream.io) is a work-in-progress SEGA Dreamcast emulator written in C for Mac, Linux and Windows.
