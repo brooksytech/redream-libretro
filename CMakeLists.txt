@@ -47,11 +47,11 @@ endif()
 #if(PLATFORM_ANDROID)
  # set(ARCH_A64 TRUE)
 #else()
-  set(ARCH_X64 TRUE)
+ # set(ARCH_X64 TRUE)
 #endif()
 
 if(BUILD_LIBRETRO)
-  # building the libretro core requires PIC code for all object files
+   building the libretro core requires PIC code for all object files
   set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 endif()
 
@@ -84,8 +84,8 @@ list(APPEND RELIB_DEFS HAVE_CONFIG_H)
 #--------------------------------------------------
 
 # capstone
-set(CAPSTONE_ARM_SUPPORT OFF CACHE BOOL "")
-set(CAPSTONE_ARM64_SUPPORT ON CACHE BOOL "")
+set(CAPSTONE_ARM_SUPPORT ON CACHE BOOL "")
+set(CAPSTONE_ARM64_SUPPORT OFF CACHE BOOL "")
 set(CAPSTONE_MIPS_SUPPORT OFF CACHE BOOL "")
 set(CAPSTONE_PPC_SUPPORT OFF CACHE BOOL "")
 set(CAPSTONE_SPARC_SUPPORT OFF CACHE BOOL "")
