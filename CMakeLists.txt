@@ -51,7 +51,7 @@ endif()
 #endif()
 
 if(BUILD_LIBRETRO)
-   building the libretro core requires PIC code for all object files
+   #building the libretro core requires PIC code for all object files
   set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 endif()
 
